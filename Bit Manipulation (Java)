@@ -1,0 +1,49 @@
+import java.util.*;
+public Class Bits {
+  public static void main(String[] args){
+   // Get bit
+    int n = 5;
+    int pos = 2;
+    int bitMask = 1 << pos;
+    if((bitMask & n) == 0){
+         System.out.println("The no. is zero");
+      }
+    else{
+          System.out.println("The no. is one");
+     }
+  }
+}
+// Set Bit Logic
+    int n = 5;
+    int pos = 3;
+    int bitMask = 1 << pos;
+    int newNum = bitMask | n;
+    {
+      System.out.println(newNum);
+    }
+ // Clear Bit Logic
+    int n = 5;
+    int pos = 3;
+    int bitMask = 1<< pos;
+    int notBitMask = ~(bitMask);
+    int newNum = notBitMask & n;
+    {
+      System.out.println(newNum);
+    }
+// Update the 2nd bit of a decimal number 5 to 1
+  Scanner sc = new Scanner(System.in);
+  int oper = sc.nextInt();
+    int n = 5;
+    int pos = 1;
+    int bitMask  = 1<<i;
+    if(oper== 1){
+      int newNum = bitMask | n;
+      System.out.println(newNum);
+      }
+     else{
+        int newBitMask = ~(bitMask);
+        int newNum = newBitMask & n;
+        System.out.println(newNum);
+        }
+    
+
