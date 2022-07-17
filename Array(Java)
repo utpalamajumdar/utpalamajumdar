@@ -1,0 +1,42 @@
+import java.util.*;
+public class Array{
+  public static void main(String[] args){
+    // input for the size of array
+    Scanner sc = new Scanner(System.in);
+    int size = sc.nextInt();
+
+    int num[] = new int[size];
+    //for input of the numbers
+    for(int i=0; i<size; i++){
+        num[i] = sc.nextInt();
+    }
+
+    //for output
+    for(int i=0; i<size; i++){
+        System.out.println(num[i]);
+     }
+   }
+}
+
+// SEARCH FOR A GIVEN NUMBER x AND PRINT THE INDEX AT WHICH IT OCCURS
+import java.util.*;
+public class LinearSearch{
+  public static void main(String[]args){
+    Scanner sc = new scanner(System.in);
+    int size = sc.nextInt();
+
+    int num[] = new int[size];
+      for(int i=0; i<size; i++){
+        num[i] = sc.nextInt();
+      }
+
+    system.out.println("Enter the value of x who's index have to be found");
+    int x = sc.nextInt();
+
+    for (int i=0; i<size; i++){
+       if(num[i] == x){
+            System.out.println("x found at index: " + i);
+       }
+     }
+  }
+}
